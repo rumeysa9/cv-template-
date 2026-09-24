@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rümeysa Köse - CV</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef1f5;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        .cv {
+            width: 900px;
+            max-width: 95%;
+            margin: 40px auto;
+            background: white;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* SOL PANEL */
+        .sidebar {
+            background: #172554;
+            color: white;
+            padding: 35px 25px;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            color: #93c5fd;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .sidebar h3 {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #93c5fd;
+            border-bottom: 1px solid rgba(255,255,255,0.25);
+            padding-bottom: 8px;
+            margin: 25px 0 12px;
+        }
+
+        .contact {
+            font-size: 13px;
+        }
+
+        .contact div {
+            margin-bottom: 12px;
+            word-break: break-word;
+        }
+
+        .contact strong {
+            display: block;
+            color: #bfdbfe;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        .skills {
+            list-style: none;
+        }
+
+        .skills li {
+            font-size: 13px;
+            margin-bottom: 10px;
+            padding-left: 12px;
+            position: relative;
+        }
+
+        .skills li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #60a5fa;
+        }
+
+        /* ANA İÇERİK */
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            color: #172554;
+            font-size: 19px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 7px;
+            margin-bottom: 15px;
+        }
+
+        .profile {
+            font-size: 14px;
+            color: #455a64;
+            text-align: justify;
+        }
+
+        .education-item,
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .company {
+            font-size: 17px;
+            font-weight: bold;
+            color: #172554;
+        }
+
+        .position {
+            font-size: 14px;
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .date {
+            font-size: 12px;
+            color: #78909c;
+            margin: 3px 0 8px;
+        }
+
+        .education-item p {
+            font-size: 13px;
+            color: #546e7a;
+        }
+
+        .experience-list {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .experience-list li {
+            font-size: 13px;
+            margin-bottom: 7px;
+            color: #455a64;
+        }
+
+        .career {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 15px 18px;
+            font-size: 13px;
+            color: #37474f;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .cv {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .cv {
+                grid-template-columns: 1fr;
+                margin: 0;
+                max-width: 100%;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .sidebar {
+                padding: 30px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <!-- SOL TARAF -->
+    <aside class="sidebar">
+
+        <div class="name">RÜMEYSA KÖSE</div>
+
+        <div class="job-title">
+            Bulut Bilişim Operatörlüğü Öğrencisi
+        </div>
+
+        <h3>İletişim</h3>
+
+        <div class="contact">
+
+            <div>
+                <strong>Telefon</strong>
+                0530 156 1497
+            </div>
+
+            <div>
+                <strong>E-posta</strong>
+                rumeysakose999@gmail.com
+            </div>
+
+            <div>
+                <strong>Konum</strong>
+                Kahramanmaraş, Türkiye
+            </div>
+
+            <div>
+                <strong>LinkedIn</strong>
+                Rümeysa Köse
+            </div>
+
+            <div>
+                <strong>GitHub</strong>
+                rumeysa9
+            </div>
+
+        </div>
+
+        <h3>Teknik Beceriler</h3>
+
+        <ul class="skills">
+            <li>IP adresleri ve temel ağ bağlantıları</li>
+            <li>Cat6 kablo bağlantıları</li>
+            <li>Windows sistem ve cihaz kurulumu</li>
+            <li>Yazıcı ve tarayıcı kurulumu</li>
+            <li>Ağ cihazı bağlantıları</li>
+            <li>MYBYS</li>
+            <li>3CX</li>
+            <li>D-İmar</li>
+            <li>Personel bilgi sistemleri</li>
+            <li>Bulut Teknolojileri – Temel</li>
+            <li>AWS – Temel</li>
+            <li>Microsoft Word</li>
+            <li>Microsoft Excel</li>
+            <li>Microsoft PowerPoint</li>
+        </ul>
+
+    </aside>
+
+
+    <!-- SAĞ TARAF -->
+    <main class="content">
+
+        <!-- PROFİL -->
+        <section class="section">
+
+            <h2 class="section-title">Profil</h2>
+
+            <p class="profile">
+                Bulut Bilişim Operatörlüğü öğrencisiyim. Bilişim teknolojileri,
+                ağ sistemleri, donanım ve bulut teknolojileri alanlarında kendimi
+                geliştirmeye devam ediyorum. Staj sürecimde bilgi işlem, ağ
+                bağlantıları, yazıcı ve tarayıcı kurulumu, personel bilgi sistemleri
+                ve çeşitli kurumsal yazılımlar hakkında uygulamalı deneyim kazandım.
+                Öğrenmeye açık, araştırmacı ve teknik becerilerini geliştirmeye
+                istekli bir öğrenciyim.
+            </p>
+
+        </section>
+
+
+        <!-- EĞİTİM -->
+        <section class="section">
+
+            <h2 class="section-title">Eğitim</h2>
+
+            <div class="education-item">
+
+                <div class="company">
+                    Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi
+                </div>
+
+                <div class="position">
+                    Bulut Bilişim Operatörlüğü
+                </div>
+
+                <div class="date">
+                    2024 – Devam ediyor
+                </div>
+
+                <p>
+                    1. sınıf eğitimini tamamladım.
+                    Bulut bilişim, ağ ve bilişim teknolojileri alanlarında
+                    eğitim alıyorum.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- STAJ -->
+        <section class="section">
+
+            <h2 class="section-title">Staj Deneyimi</h2>
+
+            <div class="experience-item">
+
+                <div class="company">
+                    Onikişubat Belediyesi
+                </div>
+
+                <div class="position">
+                    Bilgi İşlem / İnsan Kaynakları – Stajyer
+                </div>
+
+                <div class="date">
+                    20 İş Günü
+                </div>
+
+                <ul class="experience-list">
+
+                    <li>
+                        Yazıcı ve tarayıcı kurulumu ve cihazların bilgisayara
+                        tanıtılması
+                    </li>
+
+                    <li>
+                        IP üzerinden yazıcı ve tarayıcı ayarlarının yapılması
+                    </li>
+
+                    <li>
+                        Ağ bağlantıları ve Cat6 kablo bağlantılarının kontrol edilmesi
+                    </li>
+
+                    <li>
+                        İnternet ve dahili telefon bağlantılarının test edilmesi
+                    </li>
+
+                    <li>
+                        Personel bilgi ve izin sistemleri üzerinde işlem yapılması
+                    </li>
+
+                    <li>
+                        MYBYS ve farklı kurumsal yazılımların kullanılması
+                    </li>
+
+                    <li>
+                        Personel kartlarının hazırlanması ve kart yazıcısı kullanımı
+                    </li>
+
+                    <li>
+                        E-imza için gerekli yazılım ve bileşenlerin kurulumu
+                    </li>
+
+                    <li>
+                        3CX üzerinden dahili kullanıcı ve telefon işlemlerinin
+                        incelenmesi
+                    </li>
+
+                    <li>
+                        Ağ klasörlerine ve kurumsal sistemlere erişim süreçlerinin
+                        öğrenilmesi
+                    </li>
+
+                    <li>
+                        D-İmar ve diğer kurum içi bilişim sistemlerinin kullanım
+                        süreçlerinin gözlemlenmesi
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- KARİYER -->
+        <section class="section">
+
+            <h2 class="section-title">Kariyer Hedefi</h2>
+
+            <div class="career">
+                Bulut bilişim, sistem yönetimi ve ağ teknolojileri alanlarında
+                deneyim kazanarak teknik bilgi ve becerilerimi geliştirmek;
+                ilerleyen süreçte bulut teknolojileri ve sistem yönetimi alanında
+                profesyonel olarak çalışmak.
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
